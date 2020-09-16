@@ -6,75 +6,69 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     @base_title = "Community Engaged Learning Toolkit"
   end
   
-  test "should get root" do
-    get static_pages_home_url
-    assert_response :success
-    assert_select "title", "Home | #{@base_title}"
-  end
-
   
   test "should get home" do
-    get static_pages_home_url
+    get root_path
     assert_response :success
     assert_select "title", "Home | #{@base_title}"
   end
 
   test "should get glossary" do
-    get static_pages_glossary_url
+    get glossary_path
     assert_response :success
     assert_select "title", "Glossary | #{@base_title}"
   end
 
   test "should get search" do
-    get static_pages_search_url
+    get search_path
     assert_response :success
     assert_select "title", "Search | #{@base_title}"
   end
 
   test "should get faq" do
-    get static_pages_faq_url
+    get faq_path
     assert_response :success
     assert_select "title", "FAQ | #{@base_title}"
   end
 
   test "should get about" do
-    get static_pages_about_url
+    get about_path
     assert_response :success
     assert_select "title", "About | #{@base_title}"
   end
 
   test "should get what_is_cel" do
-    get static_pages_what_is_cel_url
+    get what_is_cel_path
     assert_response :success
-    assert_select "title", "What is CEL | #{@base_title}"
+    assert_select "title", "What Is CEL | #{@base_title}"
   end
 
   test "should get community_partnerships" do
-    get static_pages_community_partnerships_url
+    get community_partnerships_path
     assert_response :success
     assert_select "title", "Community Partnerships | #{@base_title}"
   end
 
   test "should get course_design" do
-    get static_pages_course_design_url
+    get course_design_path
     assert_response :success
     assert_select "title", "Course Design | #{@base_title}"
   end
 
   test "should get implementation" do
-    get static_pages_implementation_url
+    get implementation_path
     assert_response :success
     assert_select "title", "Implementation | #{@base_title}"
   end
 
   test "should get assessment" do
-    get static_pages_assessment_url
+    get assessment_path
     assert_response :success
     assert_select "title", "Assessment | #{@base_title}"
   end
 
   test "should get professional_dev" do
-    get static_pages_professional_dev_url
+    get professional_dev_path
     assert_response :success
     assert_select "title", "Professional Development | #{@base_title}"
   end
