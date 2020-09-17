@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 $basefont: '';
+$maeve: #E4CABD;
 
 .home_intertitle {
     float: left
@@ -36,4 +37,36 @@ $basefont: '';
 
 .home_image {
     margin-top: 10px;
+}
+
+.circleBase {
+    border-radius: 50%;
+}
+
+#home_search_by_topic {
+    width: 300px;
+    float: left;
+
+    div {
+        background-color: $maeve;
+        margin-top: -100px;
+        padding: 50px;
+        width: 220px;
+        height: 220px;
+        text-align: center;
+    }
+}
+
+#home_glossary_of_terms {
+    float: right;
+
+    div {
+        background-color: $maeve;
+        margin-top: -300px;
+        margin-right: -80px;
+        padding: 50px;
+        width: 220px;
+        height: 220px;
+        text-align: center;
+    }
 }

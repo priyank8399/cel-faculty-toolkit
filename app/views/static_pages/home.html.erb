@@ -1,5 +1,21 @@
 <% provide(:title, "Home") %>
-<%= render 'layouts/home_title'%>
-<div class='home_image text-center col-md-4 col-md-offset-4' >
-<%= image_tag 'lia_screenshot.png'%>
+<div class='row'>
+    <%= render 'layouts/home_title'%>
+   
+</div>
+
+<div class='row'>
+   <%= link_to(raw(" <div id='home_search_by_topic' >
+                        <div class='circleBase'>
+                            <span class='glyphicon glyphicon-search'>
+                                <p>Search by Topic</p>
+                            </span>
+                        </div>
+                    </div>"),
+                    root_path)
+    %>
+
+    <div class='home_image text-center col-md-4 col-md-offset-4' >
+        <%= image_tag 'lia_screenshot.png'%>
+    </div>
 </div>
