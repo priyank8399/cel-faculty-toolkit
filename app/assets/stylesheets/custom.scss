@@ -1,9 +1,19 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* variables */
+
+$yellow:#FCE468;
+$pink: #F7A5BB;
+$beige: #F2D5A0;
+$maeve: #E4CABD;
+
 /* universal */
 
+
+
 body {
+  background-color: $yellow;
   padding-top: 60px;
 }
 
@@ -56,12 +66,15 @@ p {
 }
 
 /* header */
+.navbar {
+  background-color: pink;
+}
 
 #logo {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
+  color: black;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -79,7 +92,7 @@ footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
-  color: #777;
+  color: $yellow;
 }
 
 footer a {
