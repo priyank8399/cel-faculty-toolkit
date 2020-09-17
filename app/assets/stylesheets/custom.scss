@@ -71,10 +71,11 @@ p {
 
 /* Navigation Header */
 .site-navigation {
-  background-color: transparent;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 
   nav {
+    background-color: $yellow;
+
     ul {
       list-style-type: none;
       padding-top: 0px;

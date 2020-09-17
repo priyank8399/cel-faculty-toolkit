@@ -18,10 +18,22 @@ $basefont: '';
 }
 
 .home_summary {
-    float: left;
-    text-align: start;
-    font-family: Arial, serif;
-    font-size: 25.9px;
     color: rgb(0, 0, 0);
+    font-family: Arial, serif;
+    font-size: 20.9px;
     font-weight: bold;
+    text-align: start;
+    top: 50%;
+    margin-top: 50px;
+    width: 300px;
+    float: right;
+
+    p {
+        LINE-HEIGHT: 33.3px;
+        margin-left: -160px;
+    }
+}
+
+.home_image {
+    margin-top: 10px;
 }
