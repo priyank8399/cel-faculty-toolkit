@@ -54,6 +54,8 @@ $maeve: #E4CABD;
         width: 220px;
         height: 220px;
         text-align: center;
+        font-weight: bold;
+        font-size: 25px;
     }
 }
 
@@ -68,5 +70,10 @@ $maeve: #E4CABD;
         width: 220px;
         height: 220px;
         text-align: center;
+        font-size: 25px;
     }
+}
+
+.glyphicon {
+    font-size: 25px;
 }
