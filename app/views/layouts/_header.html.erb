@@ -1,12 +1,25 @@
-<header class="navbar  navbar-inverse">
-<div class="container">
-<%= link_to "Grinnell College", '#', id: "logo" %>
-<nav>
-<ul class="nav navbar-nav navbar-right">
-<li><%= link_to "Home", root_path %></li>
-<li><%= link_to "Glossary", glossary_path %></li>
-<li><%= link_to "FAQ", faq_path %></li>
-</ul>
+<header>
+<div class='site-navigation container'> 
+<!-- Modified after https://codepen.io/kevin-mylett/pen/BpYedw --->
+<nav class=" navbar-nav navbar-fixed-top">
+<!--- navbar-fixed-top-->
+  <div class="container">
+    <div class="row">
+      <ul class="menu">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "What Is CEL?", what_is_cel_path %></li>
+        <li><%= link_to "Community Partnerships", community_partnerships_path %></li>
+        <li><%= link_to "Course Design", course_design_path %></li>
+        <li><%= link_to "Assessment", assessment_path %></li>
+        <li><%= link_to "Implementation", implementation_path %></li>
+        <li><%= link_to "Professional Development", professional_dev_path %></li>
+        <li><%= link_to "Glossary", glossary_path %></li>
+        <li><%= link_to "FAQ", faq_path %></li>
+       </ul>
+    </div>
+    <%= link_to "Grinnell College", '#', id: "logo" %>
+   </div>
 </nav>
 </div>
 </header>

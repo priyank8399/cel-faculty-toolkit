@@ -11,7 +11,7 @@
     <%= render 'layouts/shim' %>
   </head>
   <body>
-    <%= render 'layouts/navbar'%>
+    <%= render 'layouts/header'%>
     <div class="container">
       <h1><%= unless yield(:title).eql?("Home") 
                 full_title(yield(:title)) 
