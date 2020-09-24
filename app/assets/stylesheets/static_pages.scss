@@ -4,6 +4,7 @@
 
 $basefont: '';
 $maeve: #E4CABD;
+$purple: #4F4A97;
 
 .home_intertitle {
     float: left
@@ -56,6 +57,7 @@ $maeve: #E4CABD;
         text-align: center;
         font-weight: bold;
         font-size: 25px;
+        color: $purple;
     }
 }
 
@@ -71,9 +73,11 @@ $maeve: #E4CABD;
         height: 220px;
         text-align: center;
         font-size: 25px;
+        color: $purple;
     }
 }
 
 .glyphicon {
     font-size: 25px;
+    text-color: black
 }
