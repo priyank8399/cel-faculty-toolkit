@@ -1,8 +1,8 @@
 <% provide(:title, "Glossary") %>
 <div style='font-size:20px'>
-
+<button onclick="toggleForm()">Toggle Editor</button>
 <div style='float:right'>
-<%= form_for(@word) do |f| %>
+<%= form_for(@word,  :html => { :id => "editor-form" } ) do |f| %>
     <%= f.label :word %><br />    
     <%= f.text_field :word %><br />
 
@@ -22,3 +22,15 @@
 <% end %>
 
 </div>
+
+<script>
+<%# Modified from 'https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_hide_show' %>
+function toggleForm() {
+  var x = document.getElementById("editor-form");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
