@@ -6,7 +6,8 @@
     <%= f.text_field :word %>
 
     <%= f.label :content %>
-    <%= f.text_field :content %>
+    <%= f.text_area :content, :class => "tinymce" %>
+    <%= tinymce %>
 
     <%= f.submit "Add new word", class: "btn btn-large btn-primary" %>
 <% end %>
@@ -18,6 +19,7 @@
     <p><%= sanitize word[:content]%></p>
     </div>
 <% end %>
+
 <hr />
 <hr />
 </div>
