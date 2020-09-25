@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :words
   root 'static_pages#home'
   get '/glossary', to: 'static_pages#glossary'
   get '/search', to: 'static_pages#search'

@@ -1,3 +1,23 @@
 <% provide(:title, "Glossary") %>
-<h1>StaticPages#glossary</h1>
-<p>Find me in app/views/static_pages/glossary.html.erb</p>
+<div style='font-size:20px'>
+
+<%= form_for(@word) do |f| %>
+    <%= f.label :word %>
+    <%= f.text_field :word %>
+
+    <%= f.label :content %>
+    <%= f.text_field :content %>
+
+    <%= f.submit "Add new word", class: "btn btn-large btn-primary" %>
+<% end %>
+
+<% @glossary.each do |word|%>
+    <div>
+    <strong> <%= "#{word[:word]}" %> </strong>
+
+    <p><%= sanitize word[:content]%></p>
+    </div>
+<% end %>
+<hr />
+<hr />
+</div>
