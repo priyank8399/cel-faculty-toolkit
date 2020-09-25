@@ -1,25 +1,24 @@
 <% provide(:title, "Glossary") %>
 <div style='font-size:20px'>
 
+<div style='float:right'>
 <%= form_for(@word) do |f| %>
-    <%= f.label :word %>
-    <%= f.text_field :word %>
+    <%= f.label :word %><br />    
+    <%= f.text_field :word %><br />
 
-    <%= f.label :content %>
+    <%= f.label :content %><br />
     <%= f.text_area :content, :class => "tinymce" %>
     <%= tinymce %>
 
     <%= f.submit "Add new word", class: "btn btn-large btn-primary" %>
 <% end %>
-
+</div>
 <% @glossary.each do |word|%>
     <div>
-    <strong> <%= "#{word[:word]}" %> </strong>
+    <strong> <u><%= "#{word[:word]}" %></u> </strong>
 
     <p><%= sanitize word[:content]%></p>
     </div>
 <% end %>
 
-<hr />
-<hr />
 </div>

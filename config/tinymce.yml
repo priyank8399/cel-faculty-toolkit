@@ -1,4 +1,5 @@
-height: 500
+height: 200
+width: 600
 menubar: false
 toolbar:
   - undo redo | formatselect | bold italic backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help
