@@ -7,6 +7,8 @@ $yellow:#FCE468;
 $pink: #F7A5BB;
 $beige: #F2D5A0;
 $maeve: #E4CABD;
+$black:#000000;
+$grey: #808080;
 
 /* universal */
 
@@ -43,24 +45,26 @@ h6 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 35px;
   letter-spacing: -2px;
   margin-bottom: 10px;
   text-align: center;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 27px;
   letter-spacing: -1px;
   margin-bottom: 10px;
   text-align: center;
   font-weight: normal;
-  color: #777;
+  color: #000000;
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 20px;
   line-height: 1.7em;
+  text-align: left;
+  color: $grey;
 }
 
 .logo {
