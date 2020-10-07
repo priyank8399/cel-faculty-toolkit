@@ -4,12 +4,12 @@
 <nav class=" navbar-nav navbar-fixed-top">
 <!--- navbar-fixed-top-->
   <div class="container">
-    <div class="row">
-      <%= link_to image_tag("grinnell-logo.svg", border: 0, class:'logo'), 'https://www.grinnell.edu/', target:"_blank"%>
+    <div class-'row'>
+    <%= link_to image_tag("grinnell-logo.png", border: 0, class:'logo'), 'https://www.grinnell.edu/', target:"_blank"%>
     </div>
     <div class="row">
-      <ul class="menu">
-        <li><%= link_to "Home", root_path %></li>
+      <ul class="menu"style="margin-right:-70px;" >
+        <li><%= link_to "Home", root_path, class:'home_link' %></li>
         <li><%= link_to "What Is CEL?", what_is_cel_path %></li>
         <li><%= link_to "Community Partnerships", community_partnerships_path %></li>
         <li><%= link_to "Course Design", course_design_path %></li>

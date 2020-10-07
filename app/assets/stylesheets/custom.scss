@@ -3,13 +3,14 @@
 
 /* variables */
 
-$yellow:#FCE468;
+$yellow:#FFE765;
 $pink: #F7A5BB;
-$beige: #F2D5A0;
-$maeve: #E4CABD;
+$beige: #E9E0FF;
+$maeve: #BEB8F4;
+$dark-purple: #230F4F;
+$purple: #00175F;
 
 /* universal */
-
 
 
 body {
@@ -45,10 +46,12 @@ h6 {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3.5em;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  color: $dark-purple;
+  font-weight: bold;
 }
 
 h2 {
@@ -62,19 +65,23 @@ h2 {
 
 p {
   font-size: 1.1em;
-  line-height: 1.7em;
+  //line-height: 1.7em;
 }
 
 .logo {
-  width: 400px;
+  width: 80px;
+  margin-left: -100px;
+  margin-bottom: -110px;
+  padding-top: 20px;
 }
 
 /* Navigation Header */
 .site-navigation {
-  margin-bottom: 150px;
+  margin-bottom: 95px;
 
   nav {
     background-color: $yellow;
+    margin-top:-15px;
 
     ul {
       list-style-type: none;
@@ -88,32 +95,45 @@ p {
         a {
           color: black;
           display: block;
-          font-size: large;
-          font-weight: bold;
+          font-size: 20px;
+          font-weight: 500;
           padding: 30px 10px;
-          padding-bottom: 30px;
+          padding-bottom: 3px;
           text-decoration: none;
-          text-transform: uppercase;
           text-align: center;
+          box-shadow: 0 0 0 0 $dark-purple;
         }
 
         a:hover {
-          background-color: $beige;
+          //text-decoration: underline;
+          box-shadow: 0 5px 0 0 $dark-purple;
+          transition: all 0.3s ease-in-out;
         }
       }
     }
-
-
   }
+  
+  .home_link {
+  font-size: 30px;
+  padding-top: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  //color: $dark-purple;
+  //background-color: $maeve;
+    
 }
+
+}
+
 
 /* footer */
 
 footer {
-  margin-top: 45px;
-  padding-top: 5px;
+  margin-top: 15px;
+  padding-top: 10px;
   border-top: 1px solid #eaeaea;
   color: $yellow;
+  float: right;
 }
 
 footer a {

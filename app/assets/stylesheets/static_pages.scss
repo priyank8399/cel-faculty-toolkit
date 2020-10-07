@@ -3,81 +3,96 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 $basefont: '';
-$maeve: #E4CABD;
-$purple: #4F4A97;
+$maeve: #BEB8F4;
+$purple: #00175F;
+$dark-purple: #20004B;
 
 .home_intertitle {
     float: left
 }
 
 .home_intertitle>p {
-    LINE-HEIGHT: 43.3px;
-    text-align: start;
-    font-size: 53.3px;
-    font-family: $basefont;
+    LINE-HEIGHT: 90px;
+    text-align: center;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     color: black;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 89px;
+    margin-left: -40px;
+    color: $dark-purple;
 }
 
 .home_summary {
     color: rgb(0, 0, 0);
     font-family: Arial, serif;
-    font-size: 20.9px;
-    font-weight: bold;
-    text-align: start;
-    top: 50%;
-    margin-top: 50px;
-    width: 300px;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: end;
+    //margin-top: -40px;
+    margin-top: -85px;
+    margin-right: -50px;
+    width: 750px;
     float: right;
-
-    p {
-        LINE-HEIGHT: 33.3px;
-        margin-left: -160px;
-    }
+    //color: $dark-purple;
+    //opacity: 0.7;
 }
 
 .home_image {
-    margin-top: 10px;
+    margin-top: -50px;
+    float: right;
+    margin-right: 70px;
+    height: 60px;
 }
 
 .circleBase {
     border-radius: 50%;
+     display: flex;
+     flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    
 }
 
-#home_search_by_topic {
+#home_glossary_of_terms  {
     width: 300px;
     float: left;
 
     div {
         background-color: $maeve;
-        margin-top: -100px;
-        padding: 50px;
-        width: 220px;
-        height: 220px;
+        margin-top: -190px;
+        margin-right: -80px;
+        //padding: 30px;
+        width: 280px;
+        height: 280px;
         text-align: center;
         font-weight: bold;
-        font-size: 25px;
+        font-size: 30px;
         color: $purple;
     }
 }
 
-#home_glossary_of_terms {
+#home_search_by_topic{
     float: right;
 
     div {
         background-color: $maeve;
-        margin-top: -300px;
-        margin-right: -80px;
+        margin-top: -60px;
+        margin-right: -60px;
         padding: 50px;
-        width: 220px;
-        height: 220px;
+        width: 430px;
+        height: 430px;
         text-align: center;
-        font-size: 25px;
+        font-size: 40px;
         color: $purple;
     }
+    
+    .glyphicon {
+        font-size: 40px;
+    }
+    
+
 }
 
 .glyphicon {
-    font-size: 25px;
-    text-color: black
+    font-size: 30px;
 }
