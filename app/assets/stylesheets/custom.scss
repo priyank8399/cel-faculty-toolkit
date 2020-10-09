@@ -10,6 +10,7 @@ $maeve: #BEB8F4;
 $dark-purple: #230F4F;
 $purple: #00175F;
 $grey: #808080;
+
 /* universal */
 
 
@@ -46,21 +47,26 @@ h6 {
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 48px;
   letter-spacing: -2px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   text-align: center;
   color: $dark-purple;
   font-weight: bold;
 }
 
 h2 {
-  font-size: 27px;
+  font-size: 37px;
   letter-spacing: -1px;
   margin-bottom: 10px;
   text-align: center;
-  font-weight: normal;
+  font-weight: bold;
   color: #000000;
+}
+
+h3 {
+  color: $dark-purple;
+  font-weight: bold;
 }
 
 div {
@@ -68,10 +74,18 @@ div {
 }
 
 p {
-  font-size: 20px;
-  line-height: 1.7em;
+  font-size: 18px;
+  line-height: 1.2em;
   text-align: left;
-  color: $grey;
+  color: black;
+  padding-top: 6px;
+}
+
+li {
+  font-size: 18px;
+  line-height: 1.2em;
+  text-align: left;
+  color: black;
   padding-top: 6px;
 }
 
@@ -105,12 +119,9 @@ p {
       margin: 0;
       li {
         display: inline;
-        // float: left;
-        // flex: 1;
         a {
           color: black;
-          // display: block;
-          font-size: 15px;
+          font-size: 19px;
           font-weight: 500;
           padding: 30px 10px;
           padding-bottom: 20px;
@@ -119,7 +130,6 @@ p {
           box-shadow: 0 0 0 0 $dark-purple;
         }
         a:hover {
-          //text-decoration: underline;
           box-shadow: 0 5px 0 0 $dark-purple;
           transition: all 0.3s ease-in-out;
         }
@@ -132,8 +142,6 @@ p {
   padding-top: 40px;
   text-transform: uppercase;
   font-weight: bold;
-  //color: $dark-purple;
-  //background-color: $maeve;
     
 }
 
@@ -166,28 +174,6 @@ footer {
   }
 }
 
-// footer a {
-//   color: #555;
-// }
-
-// footer a:hover {
-//   color: #222;
-// }
-
-// footer small {
-//   float: left;
-// }
-
-// footer ul {
-//   float: right;
-//   list-style: none;
-// }
-
-// footer ul li {
-//   float: left;
-//   margin-left: 15px;
-// }
-
 /* The sidebar menu */
 
 .sidenav {
@@ -208,7 +194,7 @@ footer {
   a {
     padding: 0px 0px 0px 0px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     color: #818181;
     display: block;
   }
@@ -227,18 +213,28 @@ footer {
 }
 
 .main {
-  margin-left: 260px;
+  margin-left: 140px;
   /* Same as the width of the sidebar */
   padding-top: 20px;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+/* On smaller screens, where width is less than 480px (mobile phone), temporary hide sidebar
 
-@media screen and (max-height: 450px) {
+In the furture, make sidebar into expandable button when in small screens
+Alternatively, change the style of the sidebar (less padding and a smaller font size) */
+
+@media screen and (max-width: 480px) {
   .sidenav {
     padding-top: 15px;
     a {
       font-size: 18px;
     }
+    visibility: hidden;
   }
+  
+  .main {
+  margin-left: 10px;
+  /* Same as the width of the sidebar */
+  padding-top: 20px;
+}
 }
