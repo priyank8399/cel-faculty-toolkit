@@ -17,10 +17,6 @@
   <body>
     <%= render 'layouts/header'%>
     <div class="container">
-      <h1><%= unless yield(:title).eql?("Home") 
-                full_title(yield(:title)) 
-              end %></h1>
-
       <%= yield %>
     </div>
       <%= render 'layouts/footer' %>

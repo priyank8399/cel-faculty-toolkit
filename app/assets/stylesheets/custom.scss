@@ -9,13 +9,13 @@ $beige: #E9E0FF;
 $maeve: #BEB8F4;
 $dark-purple: #230F4F;
 $purple: #00175F;
-
+$grey: #808080;
 /* universal */
 
 
 body {
   background-color: $yellow;
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 section {
@@ -46,64 +46,78 @@ h6 {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 35px;
   letter-spacing: -2px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-align: center;
   color: $dark-purple;
   font-weight: bold;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 27px;
   letter-spacing: -1px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   text-align: center;
   font-weight: normal;
-  color: #777;
+  color: #000000;
+}
+
+div {
+  padding-top: 10px;
 }
 
 p {
-  font-size: 1.1em;
-  //line-height: 1.7em;
+  font-size: 20px;
+  line-height: 1.7em;
+  text-align: left;
+  color: $grey;
+  padding-top: 6px;
 }
 
 .logo {
   width: 80px;
-  margin-left: -100px;
-  margin-bottom: -110px;
-  padding-top: 20px;
+  margin-left: -60px;
+  margin-right: 20px;
+  margin-bottom: -60px;
+  // padding-right: 10px;
+}
+
+.image {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 
 /* Navigation Header */
-.site-navigation {
-  margin-bottom: 95px;
 
+.site-navigation {
+  margin-bottom: 20px;
   nav {
     background-color: $yellow;
     margin-top:-15px;
-
     ul {
       list-style-type: none;
       padding-top: 0px;
       margin: 0;
-      display: flex;
-
       li {
-        flex: 1;
-
+        display: inline;
+        // float: left;
+        // flex: 1;
         a {
           color: black;
-          display: block;
-          font-size: 20px;
+          // display: block;
+          font-size: 15px;
           font-weight: 500;
           padding: 30px 10px;
-          padding-bottom: 3px;
+          padding-bottom: 20px;
           text-decoration: none;
           text-align: center;
           box-shadow: 0 0 0 0 $dark-purple;
         }
-
         a:hover {
           //text-decoration: underline;
           box-shadow: 0 5px 0 0 $dark-purple;
@@ -114,7 +128,7 @@ p {
   }
   
   .home_link {
-  font-size: 30px;
+  font-size: 20px;
   padding-top: 40px;
   text-transform: uppercase;
   font-weight: bold;
@@ -133,27 +147,98 @@ footer {
   padding-top: 10px;
   border-top: 1px solid #eaeaea;
   color: $yellow;
-  float: right;
+  a {
+    color: #555;
+  }
+  a:hover {
+    color: #222;
+  }
+  footer small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
 }
 
-footer a {
-  color: #555;
+// footer a {
+//   color: #555;
+// }
+
+// footer a:hover {
+//   color: #222;
+// }
+
+// footer small {
+//   float: left;
+// }
+
+// footer ul {
+//   float: right;
+//   list-style: none;
+// }
+
+// footer ul li {
+//   float: left;
+//   margin-left: 15px;
+// }
+
+/* The sidebar menu */
+
+.sidenav {
+  width: 280px;
+  /* Set the width of the sidebar */
+  position: fixed;
+  /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1;
+  /* Stay on top */
+  top: 150px;
+  /* Stay at the top */
+  left: 0;
+  background-color: $yellow;
+  /* Black */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 20px;
+  a {
+    padding: 0px 0px 0px 0px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+  }
+  /* When you mouse over the navigation links, change their color */
+  a:hover {
+    color: #000000;
+  }
 }
 
-footer a:hover {
-  color: #222;
+/* Style page content */
+
+.page_topic {
+  margin-left: 260px;
+  /* Same as the width of the sidebar */
+  padding-top: 0px;
 }
 
-footer small {
-  float: left;
+.main {
+  margin-left: 260px;
+  /* Same as the width of the sidebar */
+  padding-top: 20px;
 }
 
-footer ul {
-  float: right;
-  list-style: none;
-}
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 
-footer ul li {
-  float: left;
-  margin-left: 15px;
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+    a {
+      font-size: 18px;
+    }
+  }
 }
