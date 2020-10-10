@@ -73,7 +73,7 @@ $dark-purple: #20004B;
     div {
         background-color: $maeve;
         margin-top: -60px;
-        margin-right: -60px;
+        margin-right: -40px;
         padding: 50px;
         width: 430px;
         height: 430px;
@@ -116,4 +116,33 @@ $dark-purple: #20004B;
 
 .glyphicon {
     font-size: 30px;
+}
+
+
+/* On mobile screens, decrease fonts*/
+
+@media screen and (max-width: 500px) {
+.home_intertitle>p {
+    LINE-HEIGHT: 90px;
+    text-align: center;
+    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    color: black;
+    font-weight: 600;
+    font-size: 75px;
+    margin-left: 30px;
+    color: $dark-purple;
+}
+
+.home_summary {
+    color: rgb(0, 0, 0);
+    font-family: Arial, serif;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: end;
+    margin-top: -85px;
+    //margin-right: -50px;
+    width: 400px;
+    float: right;
+}
+
 }
