@@ -10,6 +10,24 @@
          <ul class="menu-items">
             <li><%= link_to "Home", root_path, class:'home_link' %></li>
             <li><%= link_to "What Is CEL?", what_is_cel_path %></li>
+            <!--<div class="dropdown">-->
+            <!--   <button class="dropbtn"> Intro </button>-->
+            <!--   <i class="fa fa-caret-down"></i>-->
+            <!--   <div class="dropdown-content">-->
+            <!--     <li><%= link_to "What is CEL?", what_is_cel_path %></li> -->
+            <!--     <li><%= link_to "Liberal Arts/CEL", '#' %></li>-->
+            <!--     <li><%= link_to "Power/Privilege", '#' %></li>-->
+            <!--   </div>-->
+            <!-- </div>-->
+            <!--<div class ="dropdown"></div>-->
+            <!-- <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Intro</a>-->
+            <!--                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+            <!--                    <li><%= link_to "What is CEL?", what_is_cel_path %></li> -->
+            <!--                    <li><%= link_to "Liberal Arts/CEL", '#' %></li>-->
+            <!--                    <li><%= link_to "Power/Privilege", '#' %></li>-->
+            <!--                    </ul>-->
+            <!--</div>-->
+            
             <li><%= link_to "Community Partnerships", community_partnerships_path %></li>
             <li><%= link_to "Course Design", course_design_path %></li>
             <li><%= link_to "Assessment", assessment_path %></li>
@@ -34,7 +52,16 @@
             </a>
          </div>
          <ul class="menu-items" id="mobile-links">
-             <li><%= link_to "What Is CEL?", what_is_cel_path %></li>
+             <!--<li><%= link_to "What Is CEL?", what_is_cel_path %></li>-->
+             <div class="dropdown">
+               <button class="dropbtn"> Intro </button>
+               <i class="fa fa-caret-down"></i>
+               <div class="dropdown-content">
+                 <li><%= link_to "What is CEL?", what_is_cel_path %></li> 
+                 <li><%= link_to "Liberal Arts/CEL", '#' %></li>
+                 <li><%= link_to "Power/Privilege", '#' %></li>
+               </div>
+             </div>
              <li><%= link_to "Community Partnerships", community_partnerships_path %></li>
              <li><%= link_to "Course Design", course_design_path %></li>
              <li><%= link_to "Assessment", assessment_path %></li>
