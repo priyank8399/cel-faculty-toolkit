@@ -1,108 +1,83 @@
-<header class="main-nav container">
-   <div class="container">
-   <nav class="navbar-nav navbar-fixed-top">
-      <!-- navbar for desktop -->
-      
-      <div class ="desktop-menu">
-         <div class="logo">
-            <%= link_to image_tag("grinnell-logo.png", border: 0, class:'logo'), 'https://www.grinnell.edu/', target:"_blank"%>
-         </div>
-         <ul class="menu-items">
-            <li><%= link_to "Home", root_path, class:'home_link' %></li>
-            <li><%= link_to "What Is CEL?", what_is_cel_path %></li>
-            <!--<div class="dropdown">-->
-            <!--   <button class="dropbtn"> Intro </button>-->
-            <!--   <i class="fa fa-caret-down"></i>-->
-            <!--   <div class="dropdown-content">-->
-            <!--     <li><%= link_to "What is CEL?", what_is_cel_path %></li> -->
-            <!--     <li><%= link_to "Liberal Arts/CEL", '#' %></li>-->
-            <!--     <li><%= link_to "Power/Privilege", '#' %></li>-->
-            <!--   </div>-->
-            <!-- </div>-->
-            <!--<div class ="dropdown"></div>-->
-            <!-- <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Intro</a>-->
-            <!--                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">-->
-            <!--                    <li><%= link_to "What is CEL?", what_is_cel_path %></li> -->
-            <!--                    <li><%= link_to "Liberal Arts/CEL", '#' %></li>-->
-            <!--                    <li><%= link_to "Power/Privilege", '#' %></li>-->
-            <!--                    </ul>-->
-            <!--</div>-->
-            
-            <li><%= link_to "Community Partnerships", community_partnerships_path %></li>
-            <li><%= link_to "Course Design", course_design_path %></li>
-            <li><%= link_to "Assessment", assessment_path %></li>
-            <li><%= link_to "Implementation", implementation_path %></li>
-            <li><%= link_to "Professional Development", professional_dev_path %></li>
-            <li><%= link_to "Glossary", glossary_path %></li>
-            <li><%= link_to "FAQ", faq_path %></li>
-         </ul>
-      </div>
-      <!-- navbar for mobile -->
-      <div class ="mobile-menu">
-         <div class="top-side">
-             logo 
-            <div class="logo">
-               <%= link_to image_tag("grinnell-logo.png", border: 0, class:'logo'), 'https://www.grinnell.edu/', target:"_blank"%>
-            </div>
-             home 
-            <%= link_to "Home", root_path, class:'home_link' %>
-             hamburger menu 
-            <a href="javascript:void(0);" class="icon" onclick="toggleHamburger()">
-              <i class="fa fa-bars"></i>
-            </a>
-         </div>
-         <ul class="menu-items" id="mobile-links">
-             <li><%= link_to "What Is CEL?", what_is_cel_path %></li>
-             <div class="dropdown">
-               <button class="dropbtn"> Intro </button>
-               <i class="fa fa-caret-down"></i>
-               <div class="dropdown-content">
-                 <li><%= link_to "What is CEL?", what_is_cel_path %></li> 
-                 <li><%= link_to "Liberal Arts/CEL", '#' %></li>
-                 <li><%= link_to "Power/Privilege", '#' %></li>
-               </div>
-             </div>
-             <li><%= link_to "Community Partnerships", community_partnerships_path %></li>
-             <li><%= link_to "Course Design", course_design_path %></li>
-             <li><%= link_to "Assessment", assessment_path %></li>
-             <li><%= link_to "Implementation", implementation_path %></li>
-             <li><%= link_to "Professional Development", professional_dev_path %></li>
-             <li><%= link_to "Glossary", glossary_path %></li>
-             <li><%= link_to "FAQ", faq_path %></li>
-         </ul>
-         <script>
-            function toggleHamburger() {
-              let ham = document.getElementById("mobile-links");
-             ham.classList.toggle("show");
-            }
-         </script>
-      </div>
-   </nav>
-   </div>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!--Grinnell Logo-->
+    <%= link_to image_tag("grinnell-logo.png", border: 0, class:'logo'), 'https://www.grinnell.edu/', target:"_blank", class:'navbar-brand'%>
+    
+    <!--Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
 
-</header>
-<!--<div class='site-navigation container'>
-   <!-- Modified after https://codepen.io/kevin-mylett/pen/BpYedw --->
-<!-- <nav class="navbar-nav navbar-fixed-top">
-   <!--<div class="container">
-      <div class-'row'>
-         <%= link_to image_tag("grinnell-logo.png", border: 0, class:'logo'), 'https://www.grinnell.edu/', target:"_blank"%>
-      </div>
-      <div class="row">
-         <ul class="menu" style="margin-right:-70px;" >
-            <li><%= link_to "Home", root_path, class:'home_link' %></li>
-            <div id="myLinks">
-               <li><%= link_to "What Is CEL?", what_is_cel_path %></li>
-               <li><%= link_to "Community Partnerships", community_partnerships_path %></li>
-               <li><%= link_to "Course Design", course_design_path %></li>
-               <li><%= link_to "Assessment", assessment_path %></li>
-               <li><%= link_to "Implementation", implementation_path %></li>
-               <li><%= link_to "Professional Development", professional_dev_path %></li>
-               <li><%= link_to "Glossary", glossary_path %></li>
-               <li><%= link_to "FAQ", faq_path %></li>
-            </div>
-         </ul>
-      </div>
-   </div>
-   </nav>
-   </div>-->
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+        <li><%= link_to "Home", root_path, class:'home_link' %></li>
+        
+        <li class="dropdown">
+          <a href="what_is_cel" class="dropdown-toggle">About<b class="caret"></b></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="what_is_cel#section1">What is CEL?</a></li>
+            <li><a href="what_is_cel#section2">Liberal Arts and CEL</a></li>
+            <li><a href="what_is_cel#section3">Power and Privilege</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+          <a href="community_partnerships" class="dropdown-toggle">Partnerships<b class="caret"></b></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="community_partnerships#section1">Introduction</a></li>
+            <li><a href="community_partnerships#section2">Liberal Arts and CEL</a></li>
+            <li><a href="community_partnerships#section3">Power and Privilege</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+          <a href="course_design" class="dropdown-toggle">Course Design<b class="caret"></b></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="course_design#section1">Getting Started</a></li>
+            <li><a href="course_design#section2">Checklist</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+          <a href="implementation" class="dropdown-toggle">Implementation<b class="caret"></b></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="implementation#section1">Ethics & Governance</a></li>
+            <li><a href="implementation#section2">Preparation</a></li>
+            <li><a href="implementation#section3">Action</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+          <a href="assessment" class="dropdown-toggle">Assessment<b class="caret"></b></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="assessment#section1">Types</a></li>
+            <li><a href="assessment#section2">Learning Goals</a></li>
+          </ul>
+        </li>
+        
+        <li class="dropdown">
+          <a href="professional_dev" class="dropdown-toggle">Development<b class="caret"></b></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="professional_dev#section1">Student Development</a></li>
+            <li><a href="professional_dev#section2">Faculty Development</a></li>
+          </ul>
+        </li>
+    
+        <li><%= link_to "FAQ", faq_path %></li>
+      </ul>
+      
+      <!--Search and Glossary Nav Tab-->
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="glossary"><b style="font-size:20px" class="glyphicon glyphicon-book"></b></a></li>
+        <li><a href="search"><b style="font-size:20px" class="glyphicon glyphicon-search"></b></a></li>
+      </ul>
+      
+    </div>
+</nav>
