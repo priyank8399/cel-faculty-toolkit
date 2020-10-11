@@ -297,17 +297,17 @@ footer {
   /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1;
   /* Stay on top */
-  top: 150px;
+  top: 120px;
   /* Stay at the top */
   left: 0; // background-color: $maeve;
   /* Black */
   overflow-x: hidden;
   /* Disable horizontal scroll */
-  padding-top: 20px;
+  padding-top: 0px;
   a {
     padding: 0px 0px 0px 0px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
     color: #818181; //display: block;
   }
   /* When you mouse over the navigation links, change their color */
@@ -329,7 +329,7 @@ footer {
 .main {
   margin-left: 230px;
   /* Same as the width of the sidebar */
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 /* On phone screens, where width is less than 500px temporary hide sidebar
