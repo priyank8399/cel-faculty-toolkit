@@ -89,12 +89,12 @@ li {
 }
 
 .logo {
-  width: 60px; 
+  width: 55px;
+  margin-top: -14px;
 }
 
 .image {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 15px; // padding-bottom: 15px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -105,7 +105,7 @@ li {
 
 .site-navigation {
   margin-bottom: 20px;
-  
+
   nav {
     background-color: $yellow;
     margin-top: -15px;
@@ -139,10 +139,8 @@ li {
 
 // wrapper for both desktop and mobile menu
 header.main-nav {
-  display: flex;
-  justify-content: center;
-  padding-top: 20px;
-  
+  display: flex; // justify-content: center;
+  background-color: $yellow;
   nav {
     background-color: $yellow;
   }
@@ -164,7 +162,7 @@ header.main-nav {
     text-transform: uppercase;
     font-weight: bold;
   }
-  
+
   ul {
 
     li {
@@ -172,7 +170,7 @@ header.main-nav {
       padding: 30px 10px;
       text-align: center;
       box-shadow: 0 0 0 0 $dark-purple;
-      
+
       a {
         color: black;
         font-size: 19px;
@@ -181,14 +179,14 @@ header.main-nav {
         text-decoration: none;
       }
     }
-    
+
     li:hover {
       // color: $dark-purple;
       // background-color:$pale-yellow;
       box-shadow: 0 5px 0 0 $dark-purple;
       transition: all 0.3s ease-in-out;
     }
-    
+
   }
 }
 
@@ -197,46 +195,46 @@ header.main-nav {
   width: 80vw;
   flex-direction: column;
   align-items: center;
-  
+
   .top-side {
-    
+
     display: flex;
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    
-    
+
+
     a.home_link {
       font-size: 20px;
       text-transform: uppercase;
       font-weight: bold;
-      color:$dark-purple;
+      color: $dark-purple;
     }
-    
+
     a.icon {
       background-color: $maeve;
       padding: 20px;
-      color:$dark-purple;
+      color: $dark-purple;
     }
   }
-  
+
   ul.menu-items {
     display: flex !important;
     align-items: flex-start;
-    
+
     margin-top: 16px;
     padding-top: 16px;
     padding-bottom: 16px;
     width: 100%;
-    
+
     background: $maeve;
     flex-direction: column;
-    
+
     li {
       display: inline;
       text-align: left;
       box-shadow: 0 0 0 0 $dark-purple;
-      
+
       a {
         color: black;
         font-size: 19px;
@@ -245,19 +243,26 @@ header.main-nav {
         text-decoration: none;
       }
     }
-    
+
     li:hover {
       // color: $dark-purple;
       // background-color:$pale-yellow;
       box-shadow: 0 5px 0 0 $dark-purple;
       transition: all 0.3s ease-in-out;
     }
-    
+
   }
 }
 
-/* footer */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
 
+.dropdown-menu {
+  margin-top: 0px;
+}
+
+// /* footer */
 footer {
   margin-top: 15px;
   padding-top: 10px;
@@ -293,26 +298,26 @@ footer {
   /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1;
   /* Stay on top */
-  top: 150px;
+  top: 120px;
   /* Stay at the top */
-  left: 0;
-  background-color: $maeve;
+  left: 0; // background-color: $maeve;
   /* Black */
   overflow-x: hidden;
   /* Disable horizontal scroll */
-  padding-top: 20px;
+  padding-top: 0px;
   a {
     padding: 0px 0px 0px 0px;
     text-decoration: none;
-    font-size: 16px;
-    color: #818181;
-    display: block;
+    font-size: 14px;
+    color: #818181; //display: block;
   }
   /* When you mouse over the navigation links, change their color */
   a:hover {
     color: #000000;
   }
 }
+
+
 
 /* Style page content */
 
@@ -323,9 +328,9 @@ footer {
 }
 
 .main {
-  margin-left: 140px;
+  margin-left: 230px;
   /* Same as the width of the sidebar */
-  padding-top: 20px;
+  padding-top: 0px;
 }
 
 /* On phone screens, where width is less than 500px temporary hide sidebar
@@ -359,21 +364,16 @@ Alternatively, change the style of the sidebar (less padding and a smaller font 
 /* Mobile menu is shown */
 
 @media screen and (max-width: 1000px) {
-  
   header.main-nav {
     padding-bottom: 40px;
   }
-  
   .desktop-menu {
     display: none;
   }
-
   .mobile-menu {
-    
     #mobile-links {
       display: none !important;
     }
-    
     #mobile-links.show {
       display: flex !important;
     }
