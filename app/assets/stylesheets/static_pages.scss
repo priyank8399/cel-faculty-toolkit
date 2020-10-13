@@ -1,9 +1,8 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-
 $basefont: '';
-$maeve: #BEB8F4;
+$lavender: #BEB8F4;
 $purple: #00175F;
 $dark-purple: #20004B;
 
@@ -14,7 +13,7 @@ $dark-purple: #20004B;
 .home_intertitle>p {
     LINE-HEIGHT: 90px;
     text-align: center;
-    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif;
     color: black;
     font-weight: 600;
     font-size: 89px;
@@ -27,11 +26,13 @@ $dark-purple: #20004B;
     font-family: Arial, serif;
     font-size: 25px;
     font-weight: 400;
-    text-align: end;
     margin-top: -85px;
-    margin-right: -50px;
-    width: 750px;
+    width: 90%;
     float: right;
+    
+    p{
+        text-align: end;
+    }
 }
 
 .home_image {
@@ -43,19 +44,19 @@ $dark-purple: #20004B;
 
 .circleBase {
     border-radius: 50%;
-     display: flex;
-     flex-direction: column;
-  justify-content: center;
-  align-items: center;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
-#home_glossary_of_terms  {
+#home_glossary_of_terms {
     width: 300px;
     float: left;
 
     div {
-        background-color: $maeve;
+        background-color: $lavender;
         margin-top: -190px;
         margin-right: -80px;
         width: 280px;
@@ -67,12 +68,13 @@ $dark-purple: #20004B;
     }
 }
 
-#home_search_by_topic{
+#home_search_by_topic {
+    width: 300px;
     float: right;
 
     div {
-        background-color: $maeve;
-        margin-top: -60px;
+        background-color: $lavender;
+        margin-top: -45px;
         margin-right: -40px;
         padding: 50px;
         width: 430px;
@@ -81,18 +83,15 @@ $dark-purple: #20004B;
         font-size: 40px;
         color: $purple;
     }
-    
+
     .glyphicon {
         font-size: 40px;
     }
-    
-
 }
 
 #section1 {
     padding-top: 35px;
-    #subsec1{
-    }
+    #subsec1 {}
     #subsec2 {
         padding-top: 40px;
     }
@@ -103,8 +102,7 @@ $dark-purple: #20004B;
 
 #section2 {
     padding-top: 35px;
-    #subsec1{
-    }
+    #subsec1 {}
     #subsec2 {
         padding-top: 40px;
     }
@@ -119,30 +117,58 @@ $dark-purple: #20004B;
 }
 
 
-/* On mobile screens, decrease fonts*/
+/* On mobile screens, decrease font of title and decreas size of circles*/
 
 @media screen and (max-width: 500px) {
-.home_intertitle>p {
-    LINE-HEIGHT: 90px;
-    text-align: center;
-    font-family: Avant Garde,Avantgarde,Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    color: black;
-    font-weight: 600;
-    font-size: 75px;
-    margin-left: 30px;
-    color: $dark-purple;
+    .home_intertitle>p {
+        font-size: 75px;
+        margin-left: -20px;
+    }
+
 }
 
-.home_summary {
-    color: rgb(0, 0, 0);
-    font-family: Arial, serif;
-    font-size: 25px;
-    font-weight: 400;
-    text-align: end;
-    margin-top: -85px;
-    //margin-right: -50px;
-    width: 400px;
+@media screen and (max-width: 1000px) {
+#home_glossary_of_terms {
+    width: 300px;
+    float: left;
+
+    div {
+        background-color: $lavender;
+        margin-top: -350px;
+        margin-right: -80px;
+        width: 180px;
+        height: 180px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 20px;
+        color: $purple;
+    }
+    
+    .glyphicon {
+        font-size: 20px;
+    }
+    
+}
+
+#home_search_by_topic {
+    width: 300px;
     float: right;
+
+    div {
+        background-color: $lavender;
+        margin-top: -60px;
+        margin-right: -40px;
+        padding: 50px;
+        width: 330px;
+        height: 330px;
+        text-align: center;
+        font-size: 40px;
+        color: $purple;
+    }
+
+    .glyphicon {
+        font-size: 30px;
+    }
 }
 
 }
