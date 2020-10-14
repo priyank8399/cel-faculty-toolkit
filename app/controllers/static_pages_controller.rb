@@ -3,6 +3,10 @@ class StaticPagesController < ApplicationController
   end
 
   def glossary
+    ## https://stackoverflow.com/questions/11149430/how-to-serve-a-static-json-file-in-rails
+    ## https://stackoverflow.com/questions/1826727/how-do-i-parse-json-with-ruby-on-rails
+    @data = File.read("#{Rails.root}/public/glossary.json");
+    @glossary_sheet = JSON.parse(@data).sort_by { |k, v| k };
     @word = Word.new
     @test_glossary = [
       {word: 'community-party', content: "<h4> Here we store what a community party might mean...</h4>"},

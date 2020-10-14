@@ -21,6 +21,15 @@
     </div>
 <% end %>
 
+Glossary Sheet
+<% @glossary_sheet.to_h.each do |word, definition|%>
+    <!-- https://stackoverflow.com/questions/1227571/how-to-get-a-specific-output-iterating-a-hash-in-ruby -->
+    <div>
+    <strong> <u><%= word %></u> </strong>
+
+    <p><%= definition%></p>
+    </div>
+<% end %>
 </div>
 
 <script>
