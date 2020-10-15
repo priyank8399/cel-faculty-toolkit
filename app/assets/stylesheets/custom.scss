@@ -11,7 +11,7 @@ $purple: #00175F;
 /* universal */
 
 body {
-  padding-top: 100px;
+  padding-top: 120px;
 }
 
 section {
@@ -52,10 +52,10 @@ li {
 }
 
 .logo {
-  width: 55px;
+  width: 50px;
   margin-top: -5px;
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .image {
@@ -69,9 +69,12 @@ li {
 /* Navigation Header */
 
 nav {
+  padding-top: 9px;
+  padding-bottom: 9px;
   background-color: $dark-purple;
   display: inline;
 
+  /* Emphasized links in the header */
   .home_link {
     font-size: 20px;
     padding-top: 40px;
@@ -108,131 +111,6 @@ nav {
 
 }
 
-// .site-navigation {
-//   margin-bottom: 20px;
-//   nav {
-//     background-color: $yellow;
-//     margin-top: -15px;
-//     ul {
-//       list-style-type: none;
-//       padding-top: 0px;
-//       margin: 0;
-//       li {
-//         display: inline;
-//         a {
-//           color: black;
-//           font-size: 19px;
-//           font-weight: 500;
-//           padding: 30px 10px;
-//           padding-bottom: 20px;
-//           text-decoration: none;
-//           text-align: center;
-//           box-shadow: 0 0 0 0 $dark-purple;
-//         }
-//       }
-//       li :hover {
-//         box-shadow: 0 5px 0 0 $dark-purple;
-//         transition: all 0.3s ease-in-out;
-//       }
-//     }
-//   }
-// }
-/* Improved navigation using flexbox */
-
-// wrapper for both desktop and mobile menu
-// header.main-nav {
-//   display: flex; // justify-content: center;
-//   background-color: $yellow;
-//   nav {
-//     background-color: $yellow;
-//   }
-// }
-// .desktop-menu {
-//   display: flex;
-//   .menu-items {
-//     display: flex;
-//     list-style: none;
-//     align-items: center;
-//   }
-//   .home_link {
-//     font-size: 20px;
-//     padding-top: 40px;
-//     text-transform: uppercase;
-//     font-weight: bold;
-//   }
-//   ul {
-//     li {
-//       display: inline;
-//       padding: 30px 10px;
-//       text-align: center;
-//       box-shadow: 0 0 0 0 $dark-purple;
-//       a {
-//         color: black;
-//         font-size: 19px;
-//         font-weight: 500;
-//         padding-bottom: 20px;
-//         text-decoration: none;
-//       }
-//     }
-//     li:hover {
-//       // color: $dark-purple;
-//       // background-color:$pale-yellow;
-//       box-shadow: 0 5px 0 0 $dark-purple;
-//       transition: all 0.3s ease-in-out;
-//     }
-//   }
-// }
-// .mobile-menu {
-//   display: flex;
-//   width: 80vw;
-//   flex-direction: column;
-//   align-items: center;
-//   .top-side {
-//     display: flex;
-//     width: 100%;
-//     justify-content: space-around;
-//     align-items: center;
-//     a.home_link {
-//       font-size: 20px;
-//       text-transform: uppercase;
-//       font-weight: bold;
-//       color: $dark-purple;
-//     }
-//     a.icon {
-//       background-color: $maeve;
-//       padding: 20px;
-//       color: $dark-purple;
-//     }
-//   }
-//   ul.menu-items {
-//     display: flex !important;
-//     align-items: flex-start;
-//     margin-top: 16px;
-//     padding-top: 16px;
-//     padding-bottom: 16px;
-//     width: 100%;
-//     background: $maeve;
-//     flex-direction: column;
-//     li {
-//       display: inline;
-//       text-align: left;
-//       box-shadow: 0 0 0 0 $dark-purple;
-//       a {
-//         color: black;
-//         font-size: 19px;
-//         font-weight: 500;
-//         padding-bottom: 20px;
-//         text-decoration: none;
-//       }
-//     }
-//     li:hover {
-//       // color: $dark-purple;
-//       // background-color:$pale-yellow;
-//       box-shadow: 0 5px 0 0 $dark-purple;
-//       transition: all 0.3s ease-in-out;
-//     }
-//   }
-// }
 .dropdown:hover .dropdown-menu {
   display: block;
 }
@@ -244,8 +122,7 @@ nav {
 /* footer */
 
 footer {
-  margin-top: 15px;
-  padding-top: 10px;
+  margin-top: 15px; //padding-top: 10px;
   border-top: 1px solid #eaeaea;
   a {
     color: #555;
@@ -265,8 +142,6 @@ footer {
     }
   }
 }
-
-
 
 /* The sidebar menu */
 
@@ -303,7 +178,6 @@ footer {
 
 
 /* Style page content */
-
 
 .main {
   margin-left: 200px;
@@ -342,6 +216,21 @@ footer {
   }
 }
 
+/* On slightly smaller broswers, adjust logo size so that navbar would fit in the page*/
+
+@media screen and (max-width: 1460px) {
+  .logo {
+    margin-top: -15px;
+  }
+
+  nav {
+    .navbar-brand {
+      padding-bottom: 0px;
+      height: 35px;
+    }
+  }
+}
+
 /* On phone screens, where width is less than 500px temporary hide sidebar
 
 In the furture, make sidebar into expandable button when in small screens
@@ -364,33 +253,3 @@ Alternatively, change the style of the sidebar (less padding and a smaller font 
     padding-top: 20px;
   }
 }
-
-
-
-/*On smaller screen, turn nav bar into hamburger menu
-  https://www.w3schools.com/howto/howto_js_mobile_navbar.asp*/
-
-/* Mobile menu is shown */
-
-// @media screen and (max-width: 1000px) {
-//   header.main-nav {
-//     padding-bottom: 40px;
-//   }
-//   .desktop-menu {
-//     display: none;
-//   }
-//   .mobile-menu {
-//     #mobile-links {
-//       display: none !important;
-//     }
-//     #mobile-links.show {
-//       display: flex !important;
-//     }
-//   }
-// }
-// /* Dekstop menu is shown */
-// @media screen and (min-width: 1001px) {
-//   .mobile-menu {
-//     display: none;
-//   }
-// }

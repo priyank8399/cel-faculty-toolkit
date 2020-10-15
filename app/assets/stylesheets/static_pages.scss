@@ -18,6 +18,7 @@ $dark-purple: #20004B;
     font-weight: 600;
     font-size: 89px;
     margin-left: -40px;
+    margin-top: -10px;
     color: $dark-purple;
 }
 
@@ -26,11 +27,11 @@ $dark-purple: #20004B;
     font-family: Arial, serif;
     font-size: 25px;
     font-weight: 400;
-    margin-top: -85px;
-    width: 90%;
+    margin-top: -150px;
+    width: 87%;
     float: right;
-    
-    p{
+
+    p {
         text-align: end;
     }
 }
@@ -74,8 +75,8 @@ $dark-purple: #20004B;
 
     div {
         background-color: $lavender;
-        margin-top: -45px;
-        margin-right: -40px;
+        margin-top: -35px;
+        margin-left: -25px;
         padding: 50px;
         width: 430px;
         height: 430px;
@@ -128,47 +129,51 @@ $dark-purple: #20004B;
 }
 
 @media screen and (max-width: 1000px) {
-#home_glossary_of_terms {
-    width: 300px;
-    float: left;
+    #home_glossary_of_terms {
+        width: 300px;
+        float: left;
 
-    div {
-        background-color: $lavender;
-        margin-top: -350px;
-        margin-right: -80px;
-        width: 180px;
-        height: 180px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 20px;
-        color: $purple;
-    }
-    
-    .glyphicon {
-        font-size: 20px;
-    }
-    
-}
+        div {
+            background-color: $lavender;
+            margin-top: -350px;
+            margin-right: -80px;
+            width: 180px;
+            height: 180px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: $purple;
+        }
 
-#home_search_by_topic {
-    width: 300px;
-    float: right;
+        .glyphicon {
+            font-size: 20px;
+        }
 
-    div {
-        background-color: $lavender;
-        margin-top: -60px;
-        margin-right: -40px;
-        padding: 50px;
-        width: 330px;
-        height: 330px;
-        text-align: center;
-        font-size: 40px;
-        color: $purple;
     }
 
-    .glyphicon {
-        font-size: 30px;
+    #home_search_by_topic {
+        width: 300px;
+        float: right;
+
+        div {
+            background-color: $lavender;
+            margin-top: -60px;
+            margin-right: -40px;
+            padding: 50px;
+            width: 330px;
+            height: 330px;
+            text-align: center;
+            font-size: 40px;
+            color: $purple;
+        }
+
+        .glyphicon {
+            font-size: 30px;
+        }
     }
-}
+
+    .home_summary {
+        width: 90%;
+    }
 
 }
