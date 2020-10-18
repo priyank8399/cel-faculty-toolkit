@@ -1,7 +1,172 @@
-{
-    "zdummy2": "dummy",
-    "dummyword1": "dummyword1's definition",
-    "0dummyword2": "dummy def",
-    "Community Engaged Learning": "Community Engaged Learning is a teaching and learning strategy.",
-    "Asset Mapping": "Definition of Asset Mapping provided by Lia"
-}
+[
+  {
+    "Term": "assessment",
+    "Associated Section": "5. Assement",
+    "Definition": "Assessment allows  students, faculty, and community partners the space to anaylze their learning and experiences in community engaged intiatives. Assessment can be self-oriented and/or completed to offer feedback to facilitators. Forms of assessment can include critical reflection, demonstration/presentation, artistic expression, writing and more."
+  },
+  {
+    "Term": "asset mapping",
+    "Associated Section": "2. Community Partners",
+    "Definition": "Asset mapping is the process of identifying and recording community resources/organizations/individuals (cultural, economic, social, spatial) to understand and/or study a specific region. Such data can be utilized when designing community engaged projects to better serve the community's needs and strengths."
+  },
+  {
+    "Term": "banking concept of education",
+    "Associated Section": "1. What is CEL?",
+    "Definition": "The banking concept of education, as identified in Paolo Freire's 1970 publication,  Pedagogy of the Oppressed, sees the teacher as the natural leader of the classroom, where students are expected to absorb and not contribute information. This form of class structure disregards the identities, experiences, and perspectives of the students."
+  },
+  {
+    "Term": "civic engagement",
+    "Associated Section": "1. What is CEL?",
+    "Definition": "Civic engagement is the process of bringing students and local, regional, or national community/municipal activities together. Civic engagement can occur in the classroom, through co-curricular opportunities, or through independent student work outside of the college/university."
+  },
+  {
+    "Term": "civic responsibility",
+    "Associated Section": "1. What is CEL?",
+    "Definition": "Civic responsibility is the development of commitment to serving and incorporating community needs and strengths into a student's own work and goals. It is the application of one's education in civic life and a recognition of one's capabilities in community spaces and roles."
+  },
+  {
+    "Term": "co-creation",
+    "Associated Section": "2. Community Partners",
+    "Definition": "Co-creation is the process of creating and designing ideas, projects, processes with others in on-going collaboration. Co-creation benefits from identifying and highlighting shared values and building a sense a trust between partners before commencing collaboration."
+  },
+  {
+    "Term": "community",
+    "Associated Section": "1.What is CEL?",
+    "Definition": "A community can be defined as concrete as a specific geographic region or as abstract as a group of people with a sense of shared experience/identity."
+  },
+  {
+    "Term": "community-engaged learning (C-EL)",
+    "Associated Section": "1.What is CEL?",
+    "Definition": "Community engaged learning is designed to enhance student learning through mutually beneficial, classroom/community collaborations. A CEL course’s inclusion of community-based, collaborative projects or community members’ expertise in the classroom aims to build sustainable relationships and allows students to experience academic course content from non-traditional perspectives."
+  },
+  {
+    "Term": "community partner",
+    "Associated Section": "2. Community Partners",
+    "Definition": "A community partner is an individual, group, or organization which has voluntarily partnered with the college/university to co-create initiatives which grow opportunities for learning and collaboration. Community partners can exist at various levels of involvement with the college and take time to authentically develop."
+  },
+  {
+    "Term": "critical community-engaged learning",
+    "Associated Section": "1.What is CEL?",
+    "Definition": "Critical community engaged learning seeks to not only create service opportunities for student and community partner engagement, but develop processes towards social innovation. Critical C-EL addresses the history of power and performance in service at higher education institutions and actively works towards more mutually beneficial and sustainable relationships."
+  },
+  {
+    "Term": "critical reflection",
+    "Associated Section": "5. Assessment",
+    "Definition": "Critical reflection is a process of self-assessment which can occur pre, during, and/or post-service. Critical reflection asks  participants to address and reflect upon their own identities/perspectives and how they have shaped their service experience."
+  },
+  {
+    "Term": "cultural competency",
+    "Associated Section": "2. Community Partners",
+    "Definition": "Cultural competency allows you to collaborate effectively with individuals or groups who come from diverse ethnic, racial, religious, or economic perspectives and experiences."
+  },
+  {
+    "Term": "cultural humility",
+    "Associated Section": "2. Community Partners",
+    "Definition": "Cultural humility is the continuous self-reflection and self-awareness of power imbalances when seeking to understand another’s emotions, ideas, experiences and a commitment to developing equitable partnerships for change."
+  },
+  {
+    "Term": "decolonization",
+    "Associated Section": "1. What is CEL?",
+    "Definition": "Decolonization is the ongoing process of recognizing and dismantling inequitable systems and policies built through white supremacy and capitalism."
+  },
+  {
+    "Term": "empathy",
+    "Associated Section": "2. Community Partners",
+    "Definition": "Empathy is the active intention of understanding another’s point of view by imagining how you would feel, think, or act in their situation (Creative Reaction Lab)."
+  },
+  {
+    "Term": "engaged learning/experiential learning",
+    "Associated Section": "3. Course Design",
+    "Definition": "Engaged or experiential learning  is the active application of class content to real world experience, curricular of co-curricular. It theorizes that learning through experiencing can be transformational and have high impact for the learner."
+  },
+  {
+    "Term": "engaged/public scholarship",
+    "Associated Section": "6. Professional Development",
+    "Definition": "Engaged or public scholarship focuses on research and dissemination of knowledge which is created with and for public/community audiences."
+  },
+  {
+    "Term": "engaged teaching",
+    "Associated Section": "3. Course Design",
+    "Definition": "Engaged teaching is the process of sharing facilitation of information with community voices, creating space for perspectives outside of academia for students to engage with through a variety of possible learning experiences."
+  },
+  {
+    "Term": "equity-centered design",
+    "Associated Section": "2. Community Partners",
+    "Definition": "Equity-centered design (Creative Reaction Lab) is the design of systems and programs which values multiple perspectives and argues that equitable solutions start in the design of equitable framworks for change."
+  },
+  {
+    "Term": "gatekeepers",
+    "Associated Section": "2. Community Partners",
+    "Definition": "Gatekeepers are community members and experts that are well known and hold respect in the community among its formally and informally identified leaders."
+  },
+  {
+    "Term": "key informants",
+    "Associated Section": "2. Community Partners",
+    "Definition": "Key informants have contributed time and work in the community and have specialized knowledge about the community."
+  },
+  {
+    "Term": "memorandum of understanding (MOU)",
+    "Associated Section": "4. Implementation",
+    "Definition": "An MOU is a signed agreement between the college/university and external partners which outlines responsibilities and expectations of both parties as well as discusses any liabilities in forming the partnership."
+  },
+  {
+    "Term": "place-based learning",
+    "Associated Section": "3. Course Design",
+    "Definition": "Place-based learning support opportunities to connect course content or co-curricular initiatives to the locale of the college/university, considering the environment in which students study and live as an integral site of learning. An example of place-based learning is community engaged learning."
+  },
+  {
+    "Term": "power awareness",
+    "Associated Section": "2. Community Partners",
+    "Definition": "Power awareness is the ability to recognize lines of power in relationships and initiatives, and the active consideration of how power can harm mutually beneficial partnerships."
+  },
+  {
+    "Term": "reciprocity",
+    "Associated Section": "2. Community Partners",
+    "Definition": "Reciprocity in C-EL is the ongoing process of creating and contributing needs and interests which are mutually shared between community partners and students and faculty."
+  },
+  {
+    "Term": "role integration",
+    "Associated Section": "5. Professional Development",
+    "Definition": "Role integration is a supported strategy for faculty interested and/committed to community engaged work. It is the process of uniting a faculty member's goals with their identity as scholar, teacher, and community member to better serve their role as civically engaged faculty member."
+  },
+  {
+    "Term": "traditional service learning",
+    "Associated Section": "1. What is CEL?",
+    "Definition": "Traditional service learning  is the process of students committing  a given set of time with community partners. It acts as a short term partnership which does not address root causes of the need for service nor the inequalities associated with higher education-community partnerships."
+  },
+  {
+    "Term": "social embeddness",
+    "Associated Section": "2. Community Partners",
+    "Definition": "Social embeddness is community engaged work that respects and embraces the locale of the partnerships and seeks to function in mutually union with institutions and individuals that currently exist within the community."
+  },
+  {
+    "Term": "social innovation",
+    "Associated Section": "3. Course Design",
+    "Definition": "Social innovation is defined as development and implementation of new ideas to meet social issues and challenges (Pulford et. al)."
+  },
+  {
+    "Term": "stakeholders",
+    "Associated Section": "2. Community Partners",
+    "Definition": "Stakeholders are the individuals or groups affected by issues and partnerships."
+  },
+  {
+    "Term": "sustainability",
+    "Associated Section": "3. Course Design",
+    "Definition": "Linked to capacity building, sustainability in C-EL is creating and maintaining relationships and projects which are built to last by ebbing and flowing with the needs and strengths of the community served. Sustainable work looks at root causes of issues and seeks to address them in creating processes and systems that can challenge patterns hindering growth and equity."
+  },
+  {
+    "Term": "transformational capacity building",
+    "Associated Section": "2. Community Partners",
+    "Definition": "Transformational capacity building creates systems and process which can help sustain an organization by recognizing and upholding the unique culture, mission, goals of the organization (Nishimura et. al, 2020)."
+  },
+  {
+    "Term": "third university",
+    "Associated Section": "1. What is CEL?",
+    "Definition": "The third university is a university which is in the process of decolonization but actively takes from liberal arts and public research universities to function anf growth. It is the spaces of higher education as it seeks to transform into a more diverse and equitable educational institution (la paperson)."
+  },
+  {
+    "Term": "volunteering",
+    "Associated Section": "1. What is CEL?",
+    "Definition": "Volunteering can be short-term, episodic, and/or long-term service with community partners that is done without any curricular component."
+  }
+]
