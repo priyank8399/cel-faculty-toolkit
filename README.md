@@ -29,8 +29,11 @@ This project consists of glossary, search and many different static pages. In st
 ### Setting up environment:
 
 ○ 	[Ruby v.2.6.3 and up](https://www.ruby-lang.org/en/downloads/)
+
 ○ 	[Linux Operating System with CLI](https://www.linux.org/)
+
 ○ 	[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
+
 ○ 	[Github](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github)
 
 You can either use your local machine or cloud environment. However, it's highly recommended to use [Amazon Cloud 9](https://aws.amazon.com/cloud9/) to work on this project that satisfy most of the above development prequesites. 
