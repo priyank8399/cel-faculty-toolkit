@@ -6,7 +6,7 @@
 To get started with the project, first clone the repo and `cd` into the directory:
 
 ```
-$ git clone https://github.com/LinhTangTD/324toolkit
+$ git clone https://github.com/CSC322-Grinnell/324toolkit
 $ cd toolkit_app
 ```
 
@@ -37,7 +37,7 @@ If the test suite passes, you’ll be ready to seed the database with sample use
 $ rails db:seed
 $ rails server
 ```
-
+Now, visit http://localhost:3000/ in any browser in your local machine.
 
 ## Deploying
 
