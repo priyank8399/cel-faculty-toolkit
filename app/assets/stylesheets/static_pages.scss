@@ -1,10 +1,13 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
 $basefont: '';
 $lavender: #BEB8F4;
 $purple: #00175F;
 $dark-purple: #20004B;
+
+/* Home Intertitle: Community Engaged Learning*/
 
 .home_intertitle {
     float: left
@@ -18,30 +21,39 @@ $dark-purple: #20004B;
     font-weight: 600;
     font-size: 89px;
     margin-left: -40px;
-    margin-top: -10px;
+    margin-top: -20px;
     color: $dark-purple;
+    padding-bottom: 10px;
 }
+
+/* Home Summary: description*/
 
 .home_summary {
     color: rgb(0, 0, 0);
     font-family: Arial, serif;
-    font-size: 25px;
+    font-size: 17px;
     font-weight: 400;
-    margin-top: -150px;
-    width: 87%;
+    margin-top: -90px;
+    width: 40%;
     float: right;
+    margin-right: -20px;
 
     p {
         text-align: end;
     }
+
+    /* Inner class to add special style to "A digital toolbox"*/
+    .title {
+        font-size: 35px;
+        font-weight: bold;
+        color: #230F4F;
+        p {
+            text-align: end;
+        }
+    }
 }
 
-.home_image {
-    margin-top: -50px;
-    float: right;
-    margin-right: 70px;
-    height: 60px;
-}
+/*The purple base of the two circles*/
 
 .circleBase {
     border-radius: 50%;
@@ -52,16 +64,18 @@ $dark-purple: #20004B;
 
 }
 
+/*Glossary circle*/
+
 #home_glossary_of_terms {
     width: 300px;
     float: left;
 
     div {
         background-color: $lavender;
-        margin-top: -190px;
+        margin-top: -200px;
         margin-right: -80px;
-        width: 280px;
-        height: 280px;
+        width: 230px;
+        height: 230px;
         text-align: center;
         font-weight: bold;
         font-size: 30px;
@@ -69,17 +83,19 @@ $dark-purple: #20004B;
     }
 }
 
+/*Search circle*/
+
 #home_search_by_topic {
     width: 300px;
     float: right;
 
     div {
         background-color: $lavender;
-        margin-top: -35px;
-        margin-left: -25px;
+        margin-top: -55px;
+        margin-left: -35px;
         padding: 50px;
-        width: 430px;
-        height: 430px;
+        width: 380px;
+        height: 380px;
         text-align: center;
         font-size: 40px;
         color: $purple;
@@ -89,6 +105,8 @@ $dark-purple: #20004B;
         font-size: 40px;
     }
 }
+
+/*Styling for subsections*/
 
 #section1 {
     padding-top: 35px;
@@ -117,32 +135,26 @@ $dark-purple: #20004B;
     font-size: 30px;
 }
 
+/* UI CHANGES FOR DIFFERENT SCREEN SIZES*/
 
-/* On mobile screens, decrease font of title and decreas size of circles*/
+/* When collapsing browsers, adjust body padding so that it would not be obscured by navbar*/
 
-@media screen and (max-width: 500px) {
-    .home_intertitle>p {
-        font-size: 75px;
-        margin-left: -20px;
+@media screen and (max-width: 1215px) {
+    /* Push down glossary so that it would not be obscured by title*/
+    #home_glossary_of_terms div {
+        margin-top: -100px;
     }
-
 }
 
-@media screen and (max-width: 1000px) {
-    #home_glossary_of_terms {
-        width: 300px;
-        float: left;
+/* When collapsing browsers even more, decrease size of the two cirlces*/
 
+@media screen and (max-width: 1020px) {
+    #home_glossary_of_terms {
         div {
-            background-color: $lavender;
-            margin-top: -350px;
             margin-right: -80px;
             width: 180px;
             height: 180px;
-            text-align: center;
-            font-weight: bold;
             font-size: 20px;
-            color: $purple;
         }
 
         .glyphicon {
@@ -152,19 +164,12 @@ $dark-purple: #20004B;
     }
 
     #home_search_by_topic {
-        width: 300px;
-        float: right;
-
         div {
-            background-color: $lavender;
             margin-top: -60px;
             margin-right: -40px;
-            padding: 50px;
-            width: 330px;
-            height: 330px;
-            text-align: center;
+            width: 300px;
+            height: 300px;
             font-size: 40px;
-            color: $purple;
         }
 
         .glyphicon {
@@ -172,8 +177,63 @@ $dark-purple: #20004B;
         }
     }
 
-    .home_summary {
-        width: 90%;
+    /* On mobile screens, decrease font of title and decreas size of circles*/
+    @media screen and (max-width: 500px) {
+        .home_intertitle>p {
+            font-size: 72px;
+            margin-left: -20px;
+            line-height: 67px;
+        }
+
+        #home_search_by_topic {
+            width: 300px;
+            float: right;
+
+            div {
+                margin-top: -68px;
+                width: 200px;
+                height: 200px;
+                font-size: 25px;
+            }
+
+            .glyphicon {
+                font-size: 20px;
+            }
+        }
+
+        .home_summary {
+            margin-right: 10px;
+            font-size: medium;
+            margin-top: -380px;
+            line-height: 20px;
+            width: 33%;
+
+            p {
+                .title {
+                }
+            }
+            .title {
+                line-height: 40px;
+                font-size: 30px;
+                margin-left: 50px;
+            }
+        }
+
+        #home_glossary_of_terms {
+            width: 300px;
+            float: left;
+
+            div {
+                margin-right: -80px;
+                width: 140px;
+                height: 140px;
+                font-size: 20px;
+                color: $purple;
+            }
+            .glyphicon {
+                font-size: 20px;
+            }
+        }
     }
 
 }

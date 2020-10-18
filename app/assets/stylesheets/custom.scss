@@ -3,7 +3,6 @@
 
 /* variables */
 
-$yellow:#FFE765;
 $lavender: #BEB8F4;
 $dark-purple: #230F4F;
 $purple: #00175F;
@@ -51,19 +50,32 @@ li {
   padding-top: 6px;
 }
 
+/* IMAGES*/
+
+/*Grinnell logo*/
 .logo {
-  width: 50px;
-  margin-top: -5px;
+  width: 40px;
   margin-left: 20px;
-  margin-right: 20px;
 }
 
+/* Class for every image of all pages in website*/
 .image {
   padding-top: 15px;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+}
+
+/* Class for home image*/
+.home_image {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  display: inline;
+  margin-left: -20px;
+  margin-right: auto;
+  width: 150%;
+  margin-top: -100px;
 }
 
 /* Navigation Header */
@@ -76,13 +88,19 @@ nav {
 
   /* Emphasized links in the header */
   .home_link {
-    font-size: 20px;
+    font-size: 18px;
     padding-top: 40px;
     text-transform: uppercase;
     font-weight: bold;
     color: #fff;
   }
 
+  .navbar-brand {
+    padding-left: 0px;
+
+  }
+
+  /*Styling for the hamburger menu*/
   .navbar-toggle {
     position: relative;
     float: right;
@@ -103,10 +121,10 @@ nav {
       background-color: $dark-purple;
     }
   }
-
-
   a {
     color: #E6E6E6;
+    font-size: 16.2px;
+    line-height: 5px;
   }
 
 }
@@ -119,31 +137,34 @@ nav {
   margin-top: 0px;
 }
 
-/* footer */
+/* Footer */
 
 footer {
-  margin-top: 15px; //padding-top: 10px;
+  margin-top: 10px;
   border-top: 1px solid #eaeaea;
   a {
     color: #555;
+    font-size: small;
   }
   a:hover {
     color: #222;
   }
   footer small {
     float: left;
+    font-size: small;
   }
   ul {
     float: right;
     list-style: none;
     li {
+      padding-top: 0px;
       float: left;
       margin-left: 15px;
     }
   }
 }
 
-/* The sidebar menu */
+/* Sidebar menu */
 
 .sidenav {
   background-color: #C6C6CF;
@@ -176,18 +197,16 @@ footer {
 }
 
 
-
 /* Style page content */
 
 .main {
-  margin-left: 200px;
   /* Same as the width of the sidebar */
+  margin-left: 240px;
   padding-top: 0px;
 
   h1 {
     font-size: 48px;
     letter-spacing: -2px;
-    margin-bottom: 5px;
     text-align: center;
     color: $dark-purple;
     font-weight: bold;
@@ -197,6 +216,7 @@ footer {
     font-size: 37px;
     letter-spacing: -1px;
     margin-bottom: 10px;
+    margin-top: 40px;
     text-align: center;
     font-weight: bold;
     color: #000000;
@@ -216,29 +236,51 @@ footer {
   }
 }
 
+
+/* UI CHANGES FOR DIFFERENT SCREEN SIZES*/
+
 /* On slightly smaller broswers, adjust logo size so that navbar would fit in the page*/
 
 @media screen and (max-width: 1460px) {
   .logo {
-    margin-top: -15px;
-  }
-
-  nav {
-    .navbar-brand {
-      padding-bottom: 0px;
-      height: 35px;
-    }
+    width: 30px;
+    margin-left: 10px;
   }
 }
 
-/* On phone screens, where width is less than 500px temporary hide sidebar
+/* When collapsing browsers, adjust body padding so that it would not be obscured by navbar*/
 
-In the furture, make sidebar into expandable button when in small screens
-https://www.w3schools.com/howto/howto_css_sidenav_buttons.asp
+@media screen and (max-width: 1215px) {
+  /* Adjust body padding so that it would not be obscured by navbar*/
+  body {
+    padding-top: 160px;
+  }
 
-Alternatively, change the style of the sidebar (less padding and a smaller font size) */
+  /* Push down image so that it would not be obscured by title*/
+  .home_image  {
+    margin-top: -45px;
+    float: left;
+  }
+}
+
+/* When collapsing browsers even more,decrease image size*/
+
+@media screen and (max-width: 1000px) {
+  .home_image  {
+    margin-top: 10px;
+    margin-right: 150px;
+    width: 70%;
+    float: left;
+  }
+}
+
+/* On phone screens*/
 
 @media screen and (max-width: 500px) {
+
+  /* Temporary hide sidebar
+In the furture, make sidebar into expandable button when in small screens
+https://www.w3schools.com/howto/howto_css_sidenav_buttons.asp*/
   .sidenav {
     padding-top: 15px;
     a {
@@ -246,10 +288,19 @@ Alternatively, change the style of the sidebar (less padding and a smaller font 
     }
     visibility: hidden;
   }
-
+  /* Same as the width of the sidebar */
   .main {
-    margin-left: 20px;
-    /* Same as the width of the sidebar */
-    padding-top: 20px;
+    margin-left: 10px; //padding-top: 0px;
+  }
+  /* Shorten body padding since the navbar is now less tall*/
+  body {
+    padding-top: 100px;
+  }
+
+  /* Decrease and reposition image*/
+  .home_image {
+    width: 80%;
+    float: left; //margin-top: 10px;
+    margin-right: 0px; //margin-left: -50px;
   }
 }
