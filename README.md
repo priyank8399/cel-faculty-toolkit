@@ -2,13 +2,13 @@
 
 Visit the current web app [here](https://cel-toolkit.herokuapp.com/).
 
-## Introduction 
+## 1. Introduction 
 
 ### Background and purpose:
 
 This project is a website for the Community Engaged Learning toolkit for Grinnell faculty. Its purpose is to support faculty in community engaged courses and act as a central place for faculty to go to when they have questions. The client hopes for an interactive website that supports searching, exploring, and queries. The most important feature is searching (which has been implemented using Google search engine) that enables users to enter search terms and find related resources which can be in the form of different media types such as video, text, audio, etc...
 
-### Structures
+### App Structures
 
 This project consists of glossary, search and many different static pages. In static pages, main contents are stored with a sidebar that allows users to jump to specific sections. Users can access glossary and search through the top navbar or homepage. Glossary provides users with a list of important terms for CEL, their explanations and associated sections that users can click. Search allows users to get related pages that contain the term they put in the search bar. The current search feature is programmed using Google search engine. No extra gem is used beside those used in standard rails application.
 
@@ -24,7 +24,18 @@ This project consists of glossary, search and many different static pages. In st
 ○ 	[Programmable Search Engine](https://support.google.com/programmable-search)
 
 
-## Getting started
+## 2. Development
+
+### Setting up environment:
+
+○ 	[Ruby v.2.6.3 and up](https://www.ruby-lang.org/en/downloads/)
+○ 	[Linux Operating System with CLI](https://www.linux.org/)
+○ 	[Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
+○ 	[Github](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github)
+
+You can either use your local machine or cloud environment. However, it's highly recommended to use [Amazon Cloud 9](https://aws.amazon.com/cloud9/) to work on this project that satisfy most of the above development prequesites. 
+
+### Getting started:
 
 To get started with the project, first clone the repo and `cd` into the directory:
 
@@ -62,9 +73,9 @@ $ rails server
 ```
 Now, visit http://localhost:3000/ in any browser in your local machine to see the running app
 
-## Deploying
+## 3. Deployment
 
-To deploy the sample app to production, you’ll need a Heroku account as instructed [Section 1.4, “Deploying”](https://www.railstutorial.org/book/beginning#sec-deploying) in the tutorial. Please contact the instructor for access and ownership of the current heroku account being used.
+To deploy the sample app to production, you’ll need a Heroku account as instructed [Section 1.4, “Deploying”](https://www.railstutorial.org/book/beginning#sec-deploying) in the tutorial. Please contact the class instructor for access and ownership of all current account credentials being use, such as Trello board, github contribution access, gmail, heroku, etc.
 
 ## Credit
 
