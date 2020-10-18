@@ -3,7 +3,7 @@
 
 ## Getting started
 
-To get started with the app, first clone the repo and `cd` into the directory:
+To get started with the project, first clone the repo and `cd` into the directory:
 
 ```
 $ git clone https://github.com/LinhTangTD/324toolkit
@@ -17,9 +17,9 @@ $ yarn add jquery@3.5.1 bootstrap@3.4.1
 $ bundle install --without production
 ```
 
-(If you run into any installation issues or missing dependencies, refer to the [first chapter](https://www.learnenough.com/ruby-on-rails-6th-edition-tutorial/beginning) of the tutorial for details.)
+(If you run into any installation issues or missing dependencies, refer to this [first chapter](https://www.learnenough.com/ruby-on-rails-6th-edition-tutorial/beginning) of the Rails tutorial for details.)
 
-Next, migrate the database:
+Next, migrate the database (for tag search):
 
 ```
 $ rails db:migrate
@@ -41,19 +41,8 @@ $ rails server
 
 ## Deploying
 
-To deploy the sample app to production, you’ll need a Heroku account as discussed [Section 1.4, “Deploying”](https://www.railstutorial.org/book/beginning#sec-deploying).
+To deploy the sample app to production, you’ll need a Heroku account as instructed [Section 1.4, “Deploying”](https://www.railstutorial.org/book/beginning#sec-deploying) in the tutorial. The current web app is hosted [here](https://cel-toolkit.herokuapp.com/). Please contact the instructor for access and ownership of this heroku account.
 
-The full production app includes several advanced features, including sending email with [SendGrid](https://sendgrid.com/) and storing uploaded images with [AWS S3](https://aws.amazon.com/s3/). As a result, deploying the full sample app can be rather challenging. The suggested method for testing a deployment is to use the branch for Chapter 10 (“Updating users”), which doesn’t require more advanced settings but still includes sample users.
-
-To deploy this version of the app, you’ll need to create a new Heroku application, switch to the right branch, push up the source, run the migrations, and seed the database with sample users:
-
-```
-$ heroku create
-$ git checkout updating-users
-$ git push heroku updating-users:master
-$ heroku run rails db:migrate
-$ heroku run rails db:seed
-```
 
 ## Credit
 
