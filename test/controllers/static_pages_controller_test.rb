@@ -40,7 +40,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get what_is_cel" do
     get what_is_cel_path
     assert_response :success
-    assert_select "title", "What Is CEL | #{@base_title}"
+    assert_select "title", "What is CEL | #{@base_title}"
   end
 
   test "should get community_partnerships" do
