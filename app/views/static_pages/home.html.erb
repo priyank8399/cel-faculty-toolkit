@@ -1,30 +1,29 @@
 <% provide(:title, "Home") %>
+<!-- home_title includes primary title and the search circle found in _home_title.erb-->
 <div class='row'>
-    <%= render 'layouts/home_title'%>
+   <%= render 'layouts/home_title'%>
 </div>
-    <hr style='opacity: 0;'>
-
-   <%= link_to(
-                    raw("<div id='home_glossary_of_terms'>
-                            <div class='circleBase'>
-                                <span class='glyphicon glyphicon-book'>
-                                </span>
-                                Glossary
-                            </div>
-                        </div>"),
-                    glossary_path)
-            %>
- 
-    <!-- <div class='home_image text-center col-md-4 col-md-offset-4' >
-        <%= image_tag 'lia_screenshot.png'%>
-    </div> -->
-    
-    <div class='home_summary'>
-    <p style='font-size:40px;font-weight:bold;color:#230F4F;'> A digital toolbox for faculty</p>
-    <p>
-             
-            interested in, currently building, or reflecting on 
-            community engaged teaching, scholarship, and mentorship.
-        </p>
-    </div>
+<hr style='opacity: 0;'>
+<!--Glossary circle-->
+<%= link_to(
+   raw("<div id='home_glossary_of_terms'>
+           <div class='circleBase'>
+               <span class='glyphicon glyphicon-book'>
+               </span>
+               Glossary
+           </div>
+       </div>"),
+   glossary_path)
+   %>
+<!--Image-->
+<div class='home_image text-center col-md-3' >
+   <%= image_tag 'grinnell-students-doing-engaged-work.JPG', class:'home_image'%>
+</div>
+<!--Home summary description  -->
+<div class='home_summary'>
+   <p class="title"> A digital toolbox for faculty</p>
+   <p>
+      interested in, currently building, or reflecting on 
+      community engaged teaching, scholarship, and mentorship.
+   </p>
 </div>
