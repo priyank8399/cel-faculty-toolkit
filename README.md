@@ -85,13 +85,13 @@ To deploy the sample app to production, you’ll need a Heroku account as instru
 ### Search feature
 The search algorithm we implemented is embedded Google search, but it’s not the most optimal now and this search engine is still crawling/learning all pages in our website, thus some words can be searched while some other words can’t (hopefully it’ll be fixed in the next weeks or so since Google is fixing some problems with their programmable search engine and recrawling website data.
 
-### Tag and search by tag: 
+### Tag and search by tag
 Our community partner also prefers tag search, i.e. to assign tags to each section of content and by searching for specific tags, it should offer users a list of sections that contain that tag. One suggestion would be to put tags for corresponding content in each page, but required further discussions with client, mentor and instructor before actual implementation.
 
-### Import full content and glossary: 
+### Import full content and glossary
 CEL toolkit has a lot of content that needs to be imported into the website. We only imported the first two sections without modification of content styling due to time constraint. Thus, the next team would need to import the rest of the content with synchronous styling as Lia finishing the content.
 
-### Be creative in content delivery: 
+### Be creative in content delivery
 Utilize interactive infographic instead of big chunks of text, highlight keywords and enhance the color scheme for the content.
 
 ## Credit
@@ -101,4 +101,5 @@ This is made with the help of
 Learn Web Development with Rails*](https://www.railstutorial.org/)
 (6th Edition)
 by [Michael Hartl](http://www.michaelhartl.com/).
+
 All content belongs to Grinnell College. 
