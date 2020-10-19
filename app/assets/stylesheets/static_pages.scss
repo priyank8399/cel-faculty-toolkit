@@ -1,7 +1,6 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
-
 $basefont: '';
 $lavender: #BEB8F4;
 $purple: #00175F;
@@ -106,33 +105,99 @@ $dark-purple: #20004B;
     }
 }
 
-/*Styling for subsections*/
+.glyphicon {
+    font-size: 30px;
+}
+
+/*Styling for sections and subsections*/
+
+/* the sub section has a \. because the `.` symbol already has a meaning in CSS, read here https://stackoverflow.com/questions/12310090/css-selector-with-period-in-id*/
+/* the padding is added so that the element is bigger with blank space at the top 
+-> when the anchor link in the side navbar navigates to this element, the text is pushed down and not eaten up by the nav bar*/
+/*then, a negative margin of the same value is added, so that the styling stays the same despite the padding trick*/
 
 #section1 {
     padding-top: 35px;
-    #subsec1 {}
-    #subsec2 {
-        padding-top: 40px;
+    margin-top: -35px;
+    #section1\.1 {
+        padding-top: 55px;
+        margin-top: -55px;
     }
-    #subsec3 {
-        padding-top: 40px;
+    #section1\.2 {
+        padding-top: 55px;
+        margin-top: -55px;
+    }
+    #section1\.3 {
+        padding-top: 55px;
+        margin-top: -55px;
+    }
+    #section1\.4 {
+        padding-top: 55px;
+        margin-top: -55px;
     }
 }
 
 #section2 {
     padding-top: 35px;
-    #subsec1 {}
-    #subsec2 {
-        padding-top: 40px;
+    margin-top: -35px;
+    #section2\.1 {
+        padding-top: 55px;
+        margin-top: -55px;
+    }
+    #section2\.2 {
+        padding-top: 55px;
+        margin-top: -55px;
+    }
+    #section2\.3 {
+        padding-top: 55px;
+        margin-top: -55px;
+    }
+    #section2\.4 {
+        padding-top: 55px;
+        margin-top: -55px;
     }
 }
 
 #section3 {
     padding-top: 35px;
+    margin-top: -35px;
+    #section3\.1 {
+        padding-top: 55px;
+        margin-top: -55px;
+    }
+    #section3\.2 {
+        padding-top: 55px;
+        margin-top: -55px;
+    }
+    #section3\.3 {
+        padding-top: 55px;
+        margin-top: -55px;
+    }
+    #section3\.4 {
+        padding-top: 55px;
+        margin-top: -55px;
+    }
 }
 
-.glyphicon {
-    font-size: 30px;
+#section4 {
+    padding-top: 35px;
+    margin-top: -35px;
+    #section4\.1 {
+        padding-top: 55px;
+        margin-top: -55px;
+    }
+    #section4\.2 {
+        padding-top: 55px;
+        margin-top: -55px;
+    }
+    #section4\.3 {
+        padding-top: 55px;
+        margin-top: -55px;
+    }
+    #section4\.4 {
+        padding-top: 55px;
+        margin-top: -55px;
+    }
 }
 
 /* UI CHANGES FOR DIFFERENT SCREEN SIZES*/
@@ -209,8 +274,7 @@ $dark-purple: #20004B;
             width: 33%;
 
             p {
-                .title {
-                }
+                .title {}
             }
             .title {
                 line-height: 40px;
