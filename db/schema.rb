@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_25_024559) do
+ActiveRecord::Schema.define(version: 2020_10_16_041249) do
+
+  create_table "toolkits", force: :cascade do |t|
+    t.string "name"
+    t.string "url"
+    t.integer "category"
+    t.string "tags"
+    t.string "key_terms"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
   create_table "words", force: :cascade do |t|
     t.string "word"
