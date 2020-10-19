@@ -1,0 +1,2 @@
+class Toolkit < ApplicationRecord
+end
