@@ -43,7 +43,7 @@ You can either use your local machine or cloud environment. However, it's highly
 To get started with the project, first clone the repo and `cd` into the directory:
 
 ```
-$ git clone https://github.com/CSC322-Grinnell/324toolkit
+$ git clone https://github.com/CSC322-Grinnell/cel-faculty-toolkit
 $ cd toolkit_app
 ```
 
