@@ -94,6 +94,11 @@ CEL toolkit has a lot of content that needs to be imported into the website. We 
 ### Be creative in content delivery
 Utilize interactive infographic instead of big chunks of text, highlight keywords and enhance the color scheme for the content.
 
+### Improve UI
+Make the website more responsive. Currently the side navigation bar is made to disappear during mobile mode, this can be improved by making the side navbar collapse into a floating button that can be clicked to expand (see How To Create a Hoverable Side Navigation). Also, improve designs, color schemes, composition..
+### Feed content to `Contact` and `About` page
+In the footer right now, there are links to contact and about page. The next team should discuss with the community partner about the necessary information on for these pages and fill it in
+
 ## Credit
 
 This is made with the help of
