@@ -7,6 +7,13 @@ class StaticPagesController < ApplicationController
     ## https://stackoverflow.com/questions/1826727/how-do-i-parse-json-with-ruby-on-rails
     @data = File.read("#{Rails.root}/public/glossary.json");
     @glossary_sheet = JSON.parse(@data);
+    @links = {'1'=> what_is_cel_path, 
+      '2'=> community_partnerships_path,
+      '3'=> course_design_path,
+      '4'=> implementation_path,
+      '5'=> assessment_path,
+      '6'=> professional_dev_path
+    }
   end
 
   def search

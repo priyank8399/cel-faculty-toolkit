@@ -5,7 +5,11 @@
     <!-- https://stackoverflow.com/questions/1227571/how-to-get-a-specific-output-iterating-a-hash-in-ruby -->
     <div>
     <strong> <u><%= word["Term"] %></u> </strong>
-    <p><i>Associated Section: <%= word["Associated Section"]%> </i></p>
+    <p>
+        <i>Associated Section: </i>    
+        <%= link_to word["Associated Section"], @links[word["Associated Section"].slice(0)] %>
+    </p>
+
     <p><%= word["Definition"]%></p>
     </div>
 <% end %>
