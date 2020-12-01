@@ -51,11 +51,10 @@ li {
 }
 
 /* IMAGES*/
-
 /*Grinnell logo*/
 .logo {
+  margin-top: -5px;
   width: 40px;
-  margin-left: 20px;
 }
 
 /* Class for every image of all pages in website*/
@@ -79,7 +78,6 @@ li {
 }
 
 /* Navigation Header */
-
 nav {
   padding-top: 9px;
   padding-bottom: 9px;
@@ -91,15 +89,18 @@ nav {
     font-size: 18px;
     padding-top: 40px;
     text-transform: uppercase;
+    text-align: center;
     font-weight: bold;
     color: #fff;
   }
 
   .navbar-brand {
-    padding-left: 0px;
-
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 2.0em;
+    font-weight: bold;
   }
-
+  
   /*Styling for the hamburger menu*/
   .navbar-toggle {
     position: relative;
@@ -127,6 +128,15 @@ nav {
     line-height: 5px;
   }
 
+}
+
+.dropdown-toggle{
+  font-size: 18px;
+  padding-top: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
 }
 
 .dropdown:hover .dropdown-menu {
