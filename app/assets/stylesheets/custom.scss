@@ -314,3 +314,25 @@ https://www.w3schools.com/howto/howto_css_sidenav_buttons.asp*/
     margin-right: 0px; //margin-left: -50px;
   }
 }
+
+// Partners page 
+// Adjusts image size for the parners logo to fit in left side of text.
+.logo-icon{
+  margin-left:2%;
+  margin-right:2%;
+  float:left; 
+  height:160px;
+  width:160px;
+  object-fit: contain;
+} 
+
+// Adjusts text and creates rounded border
+.container-border {
+    border-radius: 25px;
+    border: 2px solid #2e2e2e;
+    padding: 20px; 
+    width:100%;
+    height:auto;
+    padding:1%;
+    margin-bottom: 10px;
+}
