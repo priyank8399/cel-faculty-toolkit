@@ -74,13 +74,13 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   end
   
   test "should get partners" do
-    get partners
+    get partners_path
     assert_response :success
     assert_select "title", "Partners | #{@base_title}"
   end
   
     test "should get syllabi" do
-    get syllabi
+    get syllabi_path
     assert_response :success
     assert_select "title", "Syllabi | #{@base_title}"
   end
