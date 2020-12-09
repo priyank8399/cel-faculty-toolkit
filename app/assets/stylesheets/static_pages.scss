@@ -65,7 +65,7 @@ $dark-purple: #20004B;
 
 /*Glossary circle*/
 
-#home_glossary_of_terms {
+#home_community_partner {
     width: 300px;
     float: left;
 
@@ -77,14 +77,19 @@ $dark-purple: #20004B;
         height: 230px;
         text-align: center;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 20px;
         color: $purple;
     }
+    div:hover{
+        color: #000;
+        text-decoration: underline;
+    }
+    
 }
 
 /*Search circle*/
 
-#home_search_by_topic {
+#home_faculty_toolkit {
     width: 300px;
     float: right;
 
@@ -98,15 +103,29 @@ $dark-purple: #20004B;
         text-align: center;
         font-size: 40px;
         color: $purple;
+        font-weight: bold;
+    }
+    
+    div:hover{
+        color: #000;
+        text-decoration: underline;
     }
 
     .glyphicon {
-        font-size: 40px;
+        font-size: 45px;
     }
+    
+    .glyphicon:hover {
+    color: #000;}
 }
 
 .glyphicon {
     font-size: 30px;
+}
+
+.glyphicon:hover {
+    color: #000;
+    
 }
 
 /*Styling for sections and subsections*/
