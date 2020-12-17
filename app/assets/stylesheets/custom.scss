@@ -8,10 +8,12 @@ $dark-purple: #230F4F;
 $purple: #00175F;
 $light-lavender: #e5e2fa;
 
+
 /* universal */
 
 body {
-  padding-top: 120px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 section {
@@ -82,7 +84,8 @@ li {
 nav {
   padding-top: 9px;
   padding-bottom: 9px;
-  background-color: $dark-purple;
+  background-image: url("https://wallpaperstock.net/grunge-purple-texture-wallpapers_43820_1600x1200.jpg");
+  background: cover;
   display: inline;
 
   /* Emphasized links in the header */
@@ -100,6 +103,7 @@ nav {
     padding-left: 10px;
     font-size: 2.0em;
     font-weight: bold;
+    color: #fff;
   }
   
   /*Styling for the hamburger menu*/
@@ -397,6 +401,7 @@ https://www.w3schools.com/howto/howto_css_sidenav_buttons.asp*/
   position: fixed; /* Fixed/sticky position */
   // object-position: right 60%;
   bottom: 10%; /* Place the button at the bottom of the page */
+
   right: 10px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: 4px solid $purple; /* Remove borders */
@@ -479,3 +484,13 @@ https://www.w3schools.com/howto/howto_css_sidenav_buttons.asp*/
     transform: scale(1.2);
 }
 
+.item img{
+  object-fit:cover;
+  height:600px !important;
+  width:1300px;
+}
+
+.carousel-inner {
+  /* make sure your .items will get correct height */
+  height: 100%;
+}
