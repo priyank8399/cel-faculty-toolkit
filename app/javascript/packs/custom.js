@@ -1,6 +1,5 @@
 $('#user').hide()
-$( document ).ready(function() {
-    
+$( document ).on('ready turbolinks:load', function() {
     
     console.log( "ready!" );
     $('#user').hover(function() {
