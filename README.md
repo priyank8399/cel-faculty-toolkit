@@ -1,6 +1,6 @@
 # Community Engagement Toolkit website for CSC-324
 
-Visit the current web app [here](https://cel-toolkit.herokuapp.com/).
+Visit the current web app [here](https://aqueous-hollows-79158.herokuapp.com/).
 
 ## 1. Introduction 
 
