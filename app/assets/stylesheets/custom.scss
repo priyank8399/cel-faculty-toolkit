@@ -6,8 +6,8 @@
 $lavender: #BEB8F4;
 $dark-purple: #230F4F;
 $purple: #00175F;
+$white: #FFFFFF;
 $light-lavender: #e5e2fa;
-
 
 /* universal */
 
@@ -401,7 +401,6 @@ https://www.w3schools.com/howto/howto_css_sidenav_buttons.asp*/
   position: fixed; /* Fixed/sticky position */
   // object-position: right 60%;
   bottom: 10%; /* Place the button at the bottom of the page */
-
   right: 10px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: 4px solid $purple; /* Remove borders */
